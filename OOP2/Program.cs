@@ -237,7 +237,7 @@ class Program
         int row = 0;
         int column = 0;
         int mainNumber = random.Next(0, matrix.GetLength(0) - 1);
-        Console.WriteLine(mainNumber);
+        Console.WriteLine("Рядок і стовпець головного елемента: " + mainNumber + 1);
         float[,] newMatrix = new float[matrix.GetLength(0) - 1, matrix.GetLength(0) - 1];
         for (int i = 0; i < matrix.GetLength(0); i++)
         {
@@ -251,7 +251,6 @@ class Program
             column = 0;
             row++;
         }
-        Console.WriteLine(mainNumber);
         return newMatrix;
     }
     public static void FindArithmeticRows(float[,] matrix)
